@@ -1,0 +1,17 @@
+.offcanvas-body {
+  padding: 0;
+}
+.offcanvas-body .navbar-nav {
+  flex-direction: column;
+}
+.offcanvas-body .navbar-nav .list-group-item {
+  padding: 0;
+}
+.offcanvas-body .navbar-nav .list-group-item .list-group-item-action {
+  padding: 0.5rem 1rem;
+}
+.offcanvas-body .navbar-nav .list-group-item .accordion-body {
+  padding: 0;
+}
+
+/*# sourceMappingURL=OffcanvasBody.css.map */

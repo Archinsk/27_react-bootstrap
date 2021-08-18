@@ -1,0 +1,70 @@
+.navbar-expand-lg {
+
+  button[data-bs-toggle="offcanvas"] {
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .offcanvas {
+
+    @media (min-width: 992px) {
+      position: static;
+      visibility: visible;
+      flex-direction: row;
+      width: auto;
+      transform: none;
+      border-right-width: 0;
+    }
+
+    .offcanvas-header {
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    .offcanvas-body {
+
+      @media (min-width: 992px) {
+        overflow-y: visible;
+      }
+
+      .navbar-nav {
+
+        @media (min-width: 992px) {
+          flex-direction: row;
+        }
+
+        .nav-item {
+
+          @media (min-width: 992px) {
+            border-bottom-width: 0;
+          }
+        }
+
+        .accordion-item {
+
+          @media (min-width: 992px) {
+            position: relative;
+          }
+
+          //.accordion-body {
+
+            //.list-group {
+
+              @media (min-width: 992px) {
+                .accordion-body {
+                  .list-group {
+                    position: absolute;
+                  }
+                }
+              }
+            //}
+          //}
+        }
+      }
+    }
+  }
+}

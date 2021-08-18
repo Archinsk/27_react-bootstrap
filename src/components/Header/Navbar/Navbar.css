@@ -1,0 +1,47 @@
+@media (min-width: 992px) {
+  .navbar-expand-lg button[data-bs-toggle=offcanvas] {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas {
+    position: static;
+    visibility: visible;
+    flex-direction: row;
+    width: auto;
+    transform: none;
+    border-right-width: 0;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-header {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-body {
+    overflow-y: visible;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-body .navbar-nav {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-body .navbar-nav .nav-item {
+    border-bottom-width: 0;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-body .navbar-nav .accordion-item {
+    position: relative;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-body .navbar-nav .accordion-item .accordion-body .list-group {
+    position: absolute;
+  }
+}
+
+/*# sourceMappingURL=Navbar.css.map */

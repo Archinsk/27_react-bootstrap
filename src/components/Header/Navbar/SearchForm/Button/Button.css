@@ -1,0 +1,11 @@
+.btn .material-icons {
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+  margin-right: 0.75rem;
+}
+.btn .material-icons.badge {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=Button.css.map */

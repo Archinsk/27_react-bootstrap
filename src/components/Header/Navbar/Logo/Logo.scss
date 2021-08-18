@@ -1,0 +1,15 @@
+.logo {
+  margin-right: 0;
+
+  &.logo_left {
+    margin-right: 1rem;
+  }
+
+  &.logo_right {
+    margin-left: 1rem;
+  }
+
+  .logo__image {
+    margin-right: 0.5rem;
+  }
+}

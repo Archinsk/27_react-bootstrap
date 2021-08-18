@@ -1,0 +1,19 @@
+.offcanvas-body {
+  padding: 0;
+
+  .navbar-nav {
+    flex-direction: column;
+
+    .list-group-item {
+      padding: 0;
+
+      .list-group-item-action {
+        padding: 0.5rem 1rem;
+      }
+
+      .accordion-body{
+        padding: 0;
+      }
+    }
+  }
+}
