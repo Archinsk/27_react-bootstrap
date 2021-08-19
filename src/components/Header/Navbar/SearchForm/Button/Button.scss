@@ -1,13 +1,41 @@
 .btn {
 
-  .material-icons {
+  .Icon {
     font-size: 1.5rem;
     line-height: 0.5rem;
-    margin-right: 0.75rem;
 
-    &.badge {
+    &.Icon_badge {
       font-size: 0.75rem;
       line-height: 1;
     }
   }
+
+  .Button__content:nth-child(2) {
+    margin-left: 0.75rem;
+  }
+
+  &.Btn_square {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  &.Btn_round {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+    border-radius: 50%;
+  }
+
+  &.Btn_icon-only.Btn_icon-badge {
+    padding-left: 0.489rem;
+    padding-right: 0.489rem;
+  }
+
+  //&.btn_icon-badge {
+  //
+  //  .badge {
+  //    color: white !important;
+  //    background-color: black!important;
+  //    mix-blend-mode: multiply;
+  //  }
+  //}
 }

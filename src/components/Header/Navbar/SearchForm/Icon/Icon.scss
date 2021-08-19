@@ -1,0 +1,16 @@
+.Icon {
+  padding-left: 0.2625rem;
+  padding-right: 0.2625rem;
+
+  &.Icon_badge-transparent-icon.Icon_bg-dark {
+    color: black !important;
+    background-color: white !important;
+    mix-blend-mode: screen;
+  }
+
+  &.Icon_badge-transparent-icon.Icon_bg-light {
+    color: white !important;
+    background-color: black !important;
+    mix-blend-mode: multiply;
+  }
+}

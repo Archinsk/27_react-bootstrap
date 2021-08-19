@@ -1,11 +1,26 @@
-.btn .material-icons {
+.btn .Icon {
   font-size: 1.5rem;
   line-height: 0.5rem;
-  margin-right: 0.75rem;
 }
-.btn .material-icons.badge {
+.btn .Icon.Icon_badge {
   font-size: 0.75rem;
   line-height: 1;
+}
+.btn .Button__content:nth-child(2) {
+  margin-left: 0.75rem;
+}
+.btn.Btn_square {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+.btn.Btn_round {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+  border-radius: 50%;
+}
+.btn.Btn_icon-only.Btn_icon-badge {
+  padding-left: 0.489rem;
+  padding-right: 0.489rem;
 }
 
 /*# sourceMappingURL=Button.css.map */
