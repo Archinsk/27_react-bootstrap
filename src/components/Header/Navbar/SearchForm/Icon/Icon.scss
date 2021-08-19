@@ -2,6 +2,14 @@
   padding-left: 0.2625rem;
   padding-right: 0.2625rem;
 
+  &.Icon_badge-transparent-icon:not(.Icon_badge-color-inverted) {
+    //color: transparent!important;
+
+    //color: black !important;
+    //background-color: white !important;
+    //mix-blend-mode: screen;
+  }
+
   &.Icon_badge-transparent-icon.Icon_bg-dark {
     color: black !important;
     background-color: white !important;

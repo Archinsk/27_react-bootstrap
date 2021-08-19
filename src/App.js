@@ -42,14 +42,6 @@ function App() {
                     <Icon icon="star" sem="info" badge/>
                     <Icon icon="star" sem="light" badge/>
                     <Icon icon="star" sem="dark" badge/>
-                    <Icon icon="star" sem="primary" badge transparent/>
-                    <Icon icon="star" sem="secondary" badge transparent/>
-                    <Icon icon="star" sem="success" badge transparent/>
-                    <Icon icon="star" sem="danger" badge transparent/>
-                    <Icon icon="star" sem="warning" badge transparent/>
-                    <Icon icon="star" sem="info" badge transparent/>
-                    <Icon icon="star" sem="light" badge transparent/>
-                    <Icon icon="star" sem="dark" badge transparent/>
                     <Icon icon="star" sem="primary" badge colorInverted/>
                     <Icon icon="star" sem="secondary" badge colorInverted/>
                     <Icon icon="star" sem="success" badge colorInverted/>
@@ -58,6 +50,15 @@ function App() {
                     <Icon icon="star" sem="info" badge colorInverted/>
                     <Icon icon="star" sem="light" badge colorInverted/>
                     <Icon icon="star" sem="dark" badge colorInverted/>
+                    <Icon icon="star" sem="primary" badge transparent/>
+                    <Icon icon="star" sem="secondary" badge transparent/>
+                    <Icon icon="star" sem="success" badge transparent/>
+                    <Icon icon="star" sem="danger" badge transparent/>
+                    <Icon icon="star" sem="warning" badge transparent/>
+                    <Icon icon="star" sem="info" badge transparent/>
+                    <Icon icon="star" sem="light" badge transparent/>
+                    <Icon icon="star" sem="dark" badge transparent/>
+
                     <Icon icon="star" sem="primary" badge round/>
                     <Icon icon="star" sem="secondary" badge round/>
                     <Icon icon="star" sem="success" badge round/>
@@ -188,6 +189,62 @@ function App() {
                             iconBadge="round"/>
                 </p>
                 <div className="block"></div>
+
+                <h3>Иконки</h3>
+                <table className="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Bootstrap-класс</th>
+                        <th scope="col">Простая</th>
+                        <th scope="col">Квадратный бейдж</th>
+                        <th scope="col">Квадратный бейдж прозрачный</th>
+                        <th scope="col">Квадратный бейдж инвертированный</th>
+                        <th scope="col">Квадратный бейдж инвертированный прозрачный</th>
+                        <th scope="col">Круглый бейдж</th>
+                        <th scope="col">Круглый бейдж прозрачный</th>
+                        <th scope="col">Круглый бейдж инвертированный</th>
+                        <th scope="col">Круглый бейдж инвертированный прозрачный</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">CSS-классы</th>
+                        <td>.Icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_badge-transparent-icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted.Icon_bg-dark.Icon_badge-transparent-icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_badge-transparent-icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted.Icon_bg-dark.Icon_badge-transparent-icon</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">primary</th>
+                        <td><Icon icon="star" sem="primary"/></td>
+                        <td><Icon icon="star" sem="primary" badge/></td>
+                        <td><Icon icon="star" sem="primary" badge transparent/></td>
+                        <td><Icon icon="star" sem="primary" badge colorInverted/></td>
+                        <td><Icon icon="star" sem="primary" badge colorInverted transparent/></td>
+                        <td><Icon icon="star" sem="primary" badge round/></td>
+                        <td><Icon icon="star" sem="primary" badge round transparent/></td>
+                        <td><Icon icon="star" sem="primary" badge round colorInverted/></td>
+                        <td><Icon icon="star" sem="primary" badge round colorInverted transparent/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">warning</th>
+                        <td><Icon icon="star" sem="warning"/></td>
+                        <td><Icon icon="star" sem="warning" badge/></td>
+                        <td><Icon icon="star" sem="warning" badge transparent/></td>
+                        <td><Icon icon="star" sem="warning" badge colorInverted/></td>
+                        <td><Icon icon="star" sem="warning" badge transparent/></td>
+                        <td><Icon icon="star" sem="warning" badge round/></td>
+                        <td><Icon icon="star" sem="warning" badge round transparent/></td>
+                        <td><Icon icon="star" sem="warning" badge round colorInverted/></td>
+                        <td><Icon icon="star" sem="warning" badge round colorInverted transparent/></td>
+                    </tr>
+                    </tbody>
+                </table>
 
             </div>
             <header className="App-header">
