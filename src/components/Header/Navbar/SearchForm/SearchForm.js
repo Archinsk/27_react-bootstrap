@@ -5,7 +5,7 @@ function SearchForm() {
     return (
         <form className="d-flex">
             <Input/>
-            <Button type="submit" icon="search" title="Поиск" style="outline-secondary"/>
+            <Button type="submit" content="Поиск" icon="search" sem="outline-secondary"/>
         </form>
     )
 }

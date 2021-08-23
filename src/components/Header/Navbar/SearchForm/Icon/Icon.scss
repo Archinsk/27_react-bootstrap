@@ -1,6 +1,9 @@
 .Icon {
-  padding-left: 0.2625rem;
-  padding-right: 0.2625rem;
+
+  &.Icon_badge {
+    padding-left: 0.35em;
+    padding-right: 0.35em;
+  }
 
   &.Icon_badge-transparent-icon:not(.Icon_badge-color-inverted) {
     //color: transparent!important;

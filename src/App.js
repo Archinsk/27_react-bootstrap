@@ -12,18 +12,41 @@ function App() {
             <Header/>
 
             <div className="container">
-                <p>Lorem ipsum dolor <Icon icon="settings" badge sem="danger"/> sit amet, <Icon
-                    icon="favorite"/> adipisicing elit. Ad <Icon icon="login" sem="success" badge round/> alias aperiam
+                <h3>Инлайн иконки</h3>
+                <p className="simple-text">Lorem ipsum dolor sit amet, adipisicing elit. Ad alias aperiam
                     blanditiis distinctio dolorum,
                     laboriosam molestiae repellat ullam velit! A aut fuga iure natus repellat. Amet animi debitis illo
                     magni
-                    numquam? Alias aut eius quibusdam quo reiciendis tempore temporibus. A alias illo incidunt iste
+                    numquam? <Icon icon="settings" badge sem="danger"/>Alias aut eius quibusdam quo reiciendis tempore
+                    temporibus. A alias illo incidunt iste
                     maiores
                     laboriosam molestiae repellat ullam velit! A aut fuga iure natus repellat. Amet animi debitis illo
                     magni
                     numquam? Alias aut eius quibusdam quo reiciendis tempore temporibus. A alias illo incidunt iste
                     maiores
                     molestiae nisi tenetur unde voluptatem?
+                    {/*<Icon icon="favorite"/> aperiam*/}
+                    <Icon icon="login" sem="success" badge round/> Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Aspernatur at dicta eligendi, et eveniet
+                    harum illo illum, in, modi neque nesciunt obcaecati odio quae quasi ratione<Icon icon="settings"
+                                                                                                     badge
+                                                                                                     sem="danger"/>reiciendis
+                    sunt tempora
+                    tempore ullam voluptatibus. Adipisci alias at aut consectetur cum deleniti dicta doloribus ducimus
+                    eligendi enim error esse fugiat fugit, illum ipsam molestias numquam optio perferendis praesentium
+                    quidem ratione similique tempore ullam!<Icon icon="favorite"/>At, cumque deleniti doloribus eius
+                    expedita explicabo fuga
+                    harum nesciunt nihil sed sit ullam. Dolore, illo nemo nesciunt nulla placeat ratione voluptatum?
+                    Adipisci earum eius <Icon icon="favorite"/>fugit minima nisi possimus repellat temporibus, unde.
+                    Aliquid at culpa delectus
+                    doloribus impedit, tempora. Repudiandae! Lorem ipsum dolor sitA amet, consectetur adipisicing elit.
+                    Assumenda dignissimos explicabo incidunt minima natus sit. Aliquam, culpa distinctio eos ipsa ipsum
+                    iusto libero magnam nihil nobis officiis optio perspiciatis praesentium qui quia quidem quis quo rem
+                    suscipit tenetur vitae! Ab ad aliquid animi architecto at commodi consequuntur debitis,
+                    deserunt dicta distinctio dolore dolores ducimus ea eligendi facilis fugiat fugit ipsam molestiae
+                    mollitia nisi officiis pariatur placeat porro quia ratione, recusandae reiciendis sed tempora
+                    tempore ullam, velit vero voluptates? Ab alias architecto asperiores aspernatur autem cumque dicta
+                    eos illo ipsam maiores minima molestiae nam obcaecati soluta temporibus velit, veniam voluptates?
                 </p>
                 <p>
                     <Icon icon="star" sem="primary"/>
@@ -83,8 +106,75 @@ function App() {
                     <Icon icon="star" sem="info" badge round colorInverted/>
                     <Icon icon="star" sem="light" badge round colorInverted/>
                     <Icon icon="star" sem="dark" badge round colorInverted/>
-
                 </p>
+
+                <h3>Иконки</h3>
+                <table className="table">
+                    <thead>
+                    <tr className="table__head">
+                        <th scope="col">Bootstrap-класс</th>
+                        <th scope="col">Простая</th>
+                        <th scope="col">Квадратный бейдж</th>
+                        <th scope="col">Квадратный бейдж прозрачный</th>
+                        <th scope="col">Квадратный бейдж инвертированный</th>
+                        <th scope="col">Квадратный бейдж инвертированный прозрачный</th>
+                        <th scope="col">Круглый бейдж</th>
+                        <th scope="col">Круглый бейдж прозрачный</th>
+                        <th scope="col">Круглый бейдж инвертированный</th>
+                        <th scope="col">Круглый бейдж инвертированный прозрачный</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr className="table__head">
+                        <th scope="row">CSS-классы</th>
+                        <td>.Icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_badge-transparent-icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted</td>
+                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted.Icon_bg-dark.Icon_badge-transparent-icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_badge-transparent-icon</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted</td>
+                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted.Icon_bg-dark.Icon_badge-transparent-icon</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">primary</th>
+                        <td><Icon icon="star" sem="primary"/></td>
+                        <td><Icon icon="star" sem="primary" badge/></td>
+                        <td><Icon icon="star" sem="primary" badge transparent/></td>
+                        <td><Icon icon="star" sem="primary" badge colorInverted/></td>
+                        <td><Icon icon="star" sem="primary" badge colorInverted transparent/></td>
+                        <td><Icon icon="star" sem="primary" badge round/></td>
+                        <td><Icon icon="star" sem="primary" badge round transparent/></td>
+                        <td><Icon icon="star" sem="primary" badge round colorInverted/></td>
+                        <td><Icon icon="star" sem="primary" badge round colorInverted transparent/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">warning</th>
+                        <td><Icon icon="star" sem="warning"/></td>
+                        <td><Icon icon="star" sem="warning" badge/></td>
+                        <td><Icon icon="star" sem="warning" badge transparent/></td>
+                        <td><Icon icon="star" sem="warning" badge colorInverted/></td>
+                        <td><Icon icon="star" sem="warning" badge transparent/></td>
+                        <td><Icon icon="star" sem="warning" badge round/></td>
+                        <td><Icon icon="star" sem="warning" badge round transparent/></td>
+                        <td><Icon icon="star" sem="warning" badge round colorInverted/></td>
+                        <td><Icon icon="star" sem="warning" badge round colorInverted transparent/></td>
+                    </tr>
+                    <tr className="table__head">
+                        <th scope="row">Код</th>
+                        <td>Icon icon="star" sem="warning</td>
+                        <td>Icon icon="star" sem="warning" badge</td>
+                        <td>Icon icon="star" sem="warning" badge transparent</td>
+                        <td>Icon icon="star" sem="warning" badge colorInverted</td>
+                        <td>Icon icon="star" sem="warning" badge transparent</td>
+                        <td>Icon icon="star" sem="warning" badge round</td>
+                        <td>Icon icon="star" sem="warning" badge round transparent</td>
+                        <td>Icon icon="star" sem="warning" badge round colorInverted</td>
+                        <td>Icon icon="star" sem="warning" badge round colorInverted transparent</td>
+                    </tr>
+                    </tbody>
+                </table>
 
                 <p>
                     <button>Button</button>
@@ -124,12 +214,12 @@ function App() {
                 </p>
                 <p className="d-flex gap-2">
                     <Button sem="primary" content="favorite"/>
-                    <Button sem="primary" content="favorite" icon="favorite_border"/>
+                    <Button sem="primary" content="dashboard" icon="dashboard"/>
                     <Button sem="primary" content="favorite" icon="favorite_border" iconBadge/>
                     <Button sem="primary" content="favorite" icon="favorite_border" iconBadge="round"/>
                     <Button sem="primary" content="favorite" icon="favorite_border" iconOnly/>
                     <Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"/>
-                    <Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                    <Button sem="primary" content="dashboard" icon="dashboard" iconOnly btnForm="square"
                             iconBadge/>
                     <Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"
                             iconBadge="round"/>
@@ -157,7 +247,7 @@ function App() {
                 </p>
                 <p className="d-flex gap-2">
                     <Button sem="warning" content="favorite"/>
-                    <Button sem="warning" content="favorite" icon="favorite_border"/>
+                    <Button sem="warning" content="dashboard" icon="dashboard"/>
                     <Button sem="warning" content="favorite" icon="favorite_border" iconBadge/>
                     <Button sem="warning" content="favorite" icon="favorite_border" iconBadge="round"/>
                     <Button sem="warning" content="favorite" icon="favorite_border" iconOnly/>
@@ -188,65 +278,133 @@ function App() {
                     <Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
                             iconBadge="round"/>
                 </p>
-                <div className="block"></div>
-
-                <h3>Иконки</h3>
-                <table className="table">
-                    <thead>
-                    <tr>
-                        <th scope="col">Bootstrap-класс</th>
-                        <th scope="col">Простая</th>
-                        <th scope="col">Квадратный бейдж</th>
-                        <th scope="col">Квадратный бейдж прозрачный</th>
-                        <th scope="col">Квадратный бейдж инвертированный</th>
-                        <th scope="col">Квадратный бейдж инвертированный прозрачный</th>
-                        <th scope="col">Круглый бейдж</th>
-                        <th scope="col">Круглый бейдж прозрачный</th>
-                        <th scope="col">Круглый бейдж инвертированный</th>
-                        <th scope="col">Круглый бейдж инвертированный прозрачный</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">CSS-классы</th>
-                        <td>.Icon</td>
-                        <td>.Icon.Icon_badge.Icon_badge-square</td>
-                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_badge-transparent-icon</td>
-                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted</td>
-                        <td>.Icon.Icon_badge.Icon_badge-square.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted.Icon_bg-dark.Icon_badge-transparent-icon</td>
-                        <td>.Icon.Icon_badge.Icon_badge-round</td>
-                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_badge-transparent-icon</td>
-                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted</td>
-                        <td>.Icon.Icon_badge.Icon_badge-round.Icon_bg-dark(.Icon_bg-light).Icon_badge-color-inverted.Icon_bg-dark.Icon_badge-transparent-icon</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">primary</th>
-                        <td><Icon icon="star" sem="primary"/></td>
-                        <td><Icon icon="star" sem="primary" badge/></td>
-                        <td><Icon icon="star" sem="primary" badge transparent/></td>
-                        <td><Icon icon="star" sem="primary" badge colorInverted/></td>
-                        <td><Icon icon="star" sem="primary" badge colorInverted transparent/></td>
-                        <td><Icon icon="star" sem="primary" badge round/></td>
-                        <td><Icon icon="star" sem="primary" badge round transparent/></td>
-                        <td><Icon icon="star" sem="primary" badge round colorInverted/></td>
-                        <td><Icon icon="star" sem="primary" badge round colorInverted transparent/></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">warning</th>
-                        <td><Icon icon="star" sem="warning"/></td>
-                        <td><Icon icon="star" sem="warning" badge/></td>
-                        <td><Icon icon="star" sem="warning" badge transparent/></td>
-                        <td><Icon icon="star" sem="warning" badge colorInverted/></td>
-                        <td><Icon icon="star" sem="warning" badge transparent/></td>
-                        <td><Icon icon="star" sem="warning" badge round/></td>
-                        <td><Icon icon="star" sem="warning" badge round transparent/></td>
-                        <td><Icon icon="star" sem="warning" badge round colorInverted/></td>
-                        <td><Icon icon="star" sem="warning" badge round colorInverted transparent/></td>
-                    </tr>
-                    </tbody>
-                </table>
 
             </div>
+
+            <h3>Кнопки</h3>
+            <table className="table table-buttons">
+                <thead>
+                <tr className="table__head">
+                    <th scope="col">Bootstrap-класс</th>
+                    <th scope="col">Простая</th>
+                    <th scope="col">С иконкой</th>
+                    <th scope="col">С квадратной иконкой</th>
+                    <th scope="col">С круглой иконкой</th>
+                    <th scope="col">Только иконка</th>
+                    <th scope="col">Только иконка квадратная</th>
+                    <th scope="col">Только иконка квадратная с квадратной иконкой</th>
+                    <th scope="col">Только иконка квадратная с круглой иконкой</th>
+                    <th scope="col">Только иконка круглая</th>
+                    <th scope="col">Только иконка круглая с квадратной иконкой</th>
+                    <th scope="col">Только иконка круглая с круглой иконкой</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr className="table__head">
+                    <th scope="row">CSS-классы</th>
+                    <td>.Button</td>
+                    <td>.Button.Button_icon</td>
+                    <td>.Button.Button_icon-badge-square</td>
+                    <td>.Button.Button_icon-badge-round</td>
+                    <td>.Button.Button_icon-only</td>
+                    <td>.Button.Button_icon-only-square.</td>
+                    <td>.Button.Button_icon-only-square.Button_icon-badge-square</td>
+                    <td>.Button.Button_icon-only-square.Button_icon-badge-round</td>
+                    <td>.Button.Button_icon-only-round.</td>
+                    <td>.Button.Button_icon-only-round.Button_icon-badge-square</td>
+                    <td>.Button.Button_icon-only-square.Button_icon-badge-round</td>
+                </tr>
+                <tr>
+                    <th scope="row">primary</th>
+                    <td><Button sem="primary" content="favorite"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconBadge="square"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconBadge="round"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconOnly/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="square"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="round"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="square"/></td>
+                    <td><Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="round"/></td>
+                </tr>
+                <tr>
+                    <th scope="row">outline-primary</th>
+                    <td><Button sem="primary" out content="favorite"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconBadge="square"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconBadge="round"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="square"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="square"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="round"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="round"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="square"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="round"/></td>
+                </tr>
+                <tr>
+                    <th scope="row">warning</th>
+                    <td><Button sem="warning" content="favorite"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconBadge="square"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconBadge="round"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconOnly/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconOnly btnForm="square"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="square"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="round"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconOnly btnForm="round"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="square"/></td>
+                    <td><Button sem="warning" content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="round"/></td>
+                </tr>
+                <tr>
+                    <th scope="row">outline-warning</th>
+                    <td><Button sem="warning" out content="favorite"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconBadge="square"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconBadge="round"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="square"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="square"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                                iconBadge="round"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="square"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                                iconBadge="round"/></td>
+                </tr>
+                <tr className="table__head">
+                    <th scope="row">Код</th>
+                    <td>Button sem="primary" content="favorite"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconBadge="square"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconBadge="round"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square" iconBadge="square"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square" iconBadge="round"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round" iconBadge="square"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round" iconBadge="round"</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div className="block"></div>
+
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <a
