@@ -141,11 +141,11 @@ function App() {
                         <th scope="row">primary</th>
                         <td><Icon icon="star" sem="primary"/></td>
                         <td><Icon icon="star" sem="primary" badge/></td>
-                        <td><Icon icon="star" sem="primary" badge transparent/></td>
+                        <td class="table-danger"><Icon icon="star" sem="primary" badge transparent/></td>
                         <td><Icon icon="star" sem="primary" badge colorInverted/></td>
                         <td><Icon icon="star" sem="primary" badge colorInverted transparent/></td>
                         <td><Icon icon="star" sem="primary" badge round/></td>
-                        <td><Icon icon="star" sem="primary" badge round transparent/></td>
+                        <td class="table-danger"><Icon icon="star" sem="primary" badge round transparent/></td>
                         <td><Icon icon="star" sem="primary" badge round colorInverted/></td>
                         <td><Icon icon="star" sem="primary" badge round colorInverted transparent/></td>
                     </tr>
@@ -153,11 +153,11 @@ function App() {
                         <th scope="row">warning</th>
                         <td><Icon icon="star" sem="warning"/></td>
                         <td><Icon icon="star" sem="warning" badge/></td>
-                        <td><Icon icon="star" sem="warning" badge transparent/></td>
+                        <td class="table-danger"><Icon icon="star" sem="warning" badge transparent/></td>
                         <td><Icon icon="star" sem="warning" badge colorInverted/></td>
-                        <td><Icon icon="star" sem="warning" badge transparent/></td>
+                        <td><Icon icon="star" sem="warning" badge colorInverted transparent/></td>
                         <td><Icon icon="star" sem="warning" badge round/></td>
-                        <td><Icon icon="star" sem="warning" badge round transparent/></td>
+                        <td class="table-danger"><Icon icon="star" sem="warning" badge round transparent/></td>
                         <td><Icon icon="star" sem="warning" badge round colorInverted/></td>
                         <td><Icon icon="star" sem="warning" badge round colorInverted transparent/></td>
                     </tr>
@@ -402,6 +402,60 @@ function App() {
                 </tr>
                 </tbody>
             </table>
+
+            <h3>Отзывчивые кнопки</h3>
+            <table className="table table-buttons">
+                <thead>
+                <tr className="table__head">
+                    <th scope="col">Bootstrap-класс</th>
+                    <th scope="col">Простая кнопка</th>
+                    <th scope="col">Кнопка, исчезающая на больших экранах</th>
+                    <th scope="col">Кнопка, появляющаяся на больших экранах</th>
+                    <th scope="col">Кнопка с иконкой</th>
+                    <th scope="col">Иконочная кнопка, текст появляется на больших экранах</th>
+                    <th scope="col">Иконочная кнопка, становится текстовой (без иконки) на больших экранах</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr className="table__head">
+                    <th scope="row">CSS-классы</th>
+                    <td>.Button</td>
+                    <td>.Button</td>
+                    <td>.Button</td>
+                    <td>.Button.Button_icon</td>
+                    <td>.Button.Button_icon</td>
+                    <td>.Button.Button_icon</td>
+                </tr>
+                <tr>
+                    <th scope="row">outline-warning</th>
+                    <td><Button sem="primary" out content="Search"/></td>
+                    <td><Button sem="primary" out content="Search" btnInvis="lg"/></td>
+                    <td><Button sem="primary" out content="Search" btnVis="lg"/></td>
+                    <td><Button sem="primary" out content="Search" icon="search"/></td>
+                    <td><Button sem="primary" out content="Search" icon="search" iconOnly textVis="lg"/></td>
+                    <td><Button sem="primary" out content="Search" icon="search" iconOnly textVis="lg" iconInvis="lg"/></td>
+                </tr>
+<tr>
+                    <th scope="row">outline-warning</th>
+                    <td><Button sem="warning" content="Sign in"/></td>
+                    <td><Button sem="warning" content="Sign in" btnInvis="lg"/></td>
+                    <td><Button sem="warning" content="Sign in" btnVis="lg"/></td>
+                    <td><Button sem="warning" content="Sign in" icon="login"/></td>
+                    <td><Button sem="warning" content="Sign in" icon="login" iconOnly textVis="lg"/></td>
+                    <td><Button sem="warning" content="Sign in" icon="login" iconOnly textVis="lg" iconInvis="lg"/></td>
+                </tr>
+                <tr className="table__head">
+                    <th scope="row">Код</th>
+                    <td>Button sem="warning" content="Sign in"</td>
+                    <td>Button sem="warning" content="Sign in" btnInvis="lg"</td>
+                    <td>Button sem="warning" content="Sign in" btnVis="lg"</td>
+                    <td>Button sem="warning" content="Sign in" icon="login"</td>
+                    <td>Button sem="warning" content="Sign in" icon="login" iconOnly textVis="lg"</td>
+                    <td>Button sem="warning" content="Sign in" icon="login" iconOnly textVis="lg" iconInvis="lg"</td>
+                </tr>
+                </tbody>
+            </table>
+
 
             <div className="block"></div>
 

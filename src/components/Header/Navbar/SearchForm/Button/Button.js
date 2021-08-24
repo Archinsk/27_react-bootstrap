@@ -18,19 +18,58 @@ function Button(props) {
     let buttonContentText = props.content ? props.content : "Button";
     let buttonContent;
     if (props.iconOnly) {
-        buttonContent = "";
+        // Content display --------
+        if (props.textVis) {
+            let visClass = " d-none d-" + props.textVis + "-inline-block";
+            let contentClass = "Button__content" + visClass;
+            buttonContent = <span className={contentClass}>{buttonContentText}</span>
+        } else {
+            buttonContent = "";
+        }
     } else {
         buttonContent = <span className="Button__content">{buttonContentText}</span>
     }
     // Icons --------
-    let buttonIcon = props.icon ? <Icon icon={props.icon}/> : "";
-    buttonIcon = props.iconBadge ? <Icon icon={props.icon} sem={props.sem} badge colorInverted/> : buttonIcon;
-    buttonIcon = props.out && props.iconBadge ?
-        <Icon icon={props.icon} sem={props.sem} badge transparent/> : buttonIcon;
-    buttonIcon = props.iconBadge === "round" ?
-        <Icon icon={props.icon} sem={props.sem} badge colorInverted round/> : buttonIcon;
-    buttonIcon = props.out && props.iconBadge === "round" ?
-        <Icon icon={props.icon} sem={props.sem} badge round transparent/> : buttonIcon;
+    // let buttonIcon = props.icon ? <Icon icon={props.icon}/> : "";
+    // buttonIcon = props.iconBadge ? <Icon icon={props.icon} sem={props.sem} badge colorInverted/> : buttonIcon;
+    // buttonIcon = props.out && props.iconBadge ? <Icon icon={props.icon} sem={props.sem} badge transparent/> : buttonIcon;
+    // buttonIcon = props.iconBadge === "round" ? <Icon icon={props.icon} sem={props.sem} badge colorInverted round/> : buttonIcon;
+    // buttonIcon = props.out && props.iconBadge === "round" ? <Icon icon={props.icon} sem={props.sem} badge round transparent/> : buttonIcon;
+
+    let buttonIcon = "";
+    if (props.icon) {
+        buttonIcon = <Icon icon={props.icon}/>;
+        buttonIcon = props.iconVis && !props.iconInvis ? <Icon icon={props.icon} iconVis={props.iconVis}/> : buttonIcon;
+        buttonIcon = props.iconInvis && !props.iconVis ? <Icon icon={props.icon} iconInvis={props.iconInvis}/> : buttonIcon;
+        buttonIcon = props.iconVis && props.iconInvis ? <Icon icon={props.icon} iconVis={props.iconVis} iconInvis={props.iconInvis}/> : buttonIcon;
+        if (props.iconBadge) {
+            buttonIcon = <Icon icon={props.icon} sem={props.sem} badge colorInverted/>;
+            buttonIcon = props.iconVis && !props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge colorInverted iconVis={props.iconVis}/> : buttonIcon;
+            buttonIcon = props.iconInvis && !props.iconVis ? <Icon icon={props.icon} sem={props.sem} badge colorInverted iconInvis={props.iconInvis}/> : buttonIcon;
+            buttonIcon = props.iconVis && props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge colorInverted iconVis={props.iconVis} iconInvis={props.iconInvis}/> : buttonIcon;
+            if (props.iconBadge === "round") {
+                buttonIcon = <Icon icon={props.icon} sem={props.sem} badge colorInverted round/>;
+                buttonIcon = props.iconVis && !props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge colorInverted round iconVis={props.iconVis}/> : buttonIcon;
+                buttonIcon = props.iconInvis && !props.iconVis ? <Icon icon={props.icon} sem={props.sem} badge colorInverted round iconInvis={props.iconInvis}/> : buttonIcon;
+                buttonIcon = props.iconVis && props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge colorInverted round iconVis={props.iconVis} iconInvis={props.iconInvis}/> : buttonIcon;
+            }
+            if (props.out) {
+                buttonIcon = <Icon icon={props.icon} sem={props.sem} badge transparent/>;
+                buttonIcon = props.iconVis && !props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge transparent iconVis={props.iconVis}/> : buttonIcon;
+                buttonIcon = props.iconInvis && !props.iconVis ? <Icon icon={props.icon} sem={props.sem} badge transparent iconInvis={props.iconInvis}/> : buttonIcon;
+                buttonIcon = props.iconVis && props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge transparent iconVis={props.iconVis} iconInvis={props.iconInvis}/> : buttonIcon;
+                if (props.iconBadge === "round") {
+                    buttonIcon = <Icon icon={props.icon} sem={props.sem} badge transparent round/>;
+                    buttonIcon = props.iconVis && !props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge transparent round iconVis={props.iconVis}/> : buttonIcon;
+                    buttonIcon = props.iconInvis && !props.iconVis ? <Icon icon={props.icon} sem={props.sem} badge transparent round iconInvis={props.iconInvis}/> : buttonIcon;
+                    buttonIcon = props.iconVis && props.iconInvis ? <Icon icon={props.icon} sem={props.sem} badge transparent round iconVis={props.iconVis} iconInvis={props.iconInvis}/> : buttonIcon;
+                }
+            }
+        }
+    } else {
+        buttonIcon = ""
+    }
+
     // Type --------
     const buttonType = props.type ? props.type : "button";
     // Semantic --------
@@ -41,7 +80,7 @@ function Button(props) {
     buttonForm = props.btnForm === "square" ? "-square" : buttonForm;
     buttonForm = props.btnForm === "round" ? "-round" : buttonForm;
     let buttonClass = buttonSemantic;
-    if (props.icon && (props.btnForm || props.iconOnly) ) {
+    if (props.icon && (props.btnForm || props.iconOnly)) {
         buttonClass += " Button_icon";
         if (props.iconOnly) {
             buttonClass += "-only" + buttonForm
@@ -66,6 +105,13 @@ function Button(props) {
     // Size --------
     if (props.size) {
         buttonClass += " btn-" + props.size;
+    }
+    // Button display --------
+    if (props.btnInvis) {
+        buttonClass += " d-" + props.btnInvis + "-none";
+    }
+    if (props.btnVis) {
+        buttonClass += " d-none d-" + props.btnVis + "-inline-flex";
     }
 
     return (

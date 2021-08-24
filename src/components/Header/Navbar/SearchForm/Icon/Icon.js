@@ -75,7 +75,13 @@ function Icon(props) {
 
     const iconBadge = props.badge && !props.round ? " Icon_badge Icon_badge-square badge" : "";
     const iconRound = props.badge && props.round ? " Icon_badge Icon_badge-round badge rounded-pill" : "";
-    const iconClass = "Icon material-icons" + iconBadge + iconSemantic + iconRound + iconTransparent;
+
+    // Icon display --------
+    const iconVis = props.iconVis ? " d-none d-" + props.iconVis + "-inline-block" : "";
+    const iconInvis = props.iconInvis ? " d-" + props.iconInvis + "-none" : "";
+    const iconDisplay = iconVis + iconInvis;
+
+    const iconClass = "Icon material-icons" + iconBadge + iconSemantic + iconRound + iconTransparent + iconDisplay;
     return <span className={iconClass}>{props.icon}</span>
 }
 
