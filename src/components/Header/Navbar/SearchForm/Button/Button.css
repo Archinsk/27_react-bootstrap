@@ -16,7 +16,7 @@
 }
 .btn:not([class*=Button_icon-badge]) .Icon {
   vertical-align: baseline;
-  font-size: 1.65rem;
+  font-size: 1.65em;
 }
 .btn:not([class*=Button_icon-badge])[class*=Button_icon] {
   padding-top: 0.313rem;

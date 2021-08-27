@@ -2,9 +2,11 @@ import Navbar from './Navbar/Navbar';
 
 function Header() {
     return (
-        <div>
-            <Navbar/>
-        </div>
+        <header className="header bg-light">
+            <div className="header__wrapper container">
+                <Navbar/>
+            </div>
+        </header>
     )
 }
 

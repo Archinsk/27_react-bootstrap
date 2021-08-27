@@ -3,10 +3,14 @@
     display: none;
   }
 }
+.navbar-expand-lg .offcanvas {
+  display: inline-flex;
+}
 @media (min-width: 992px) {
   .navbar-expand-lg .offcanvas {
+    transition: transform 0s;
     position: static;
-    visibility: visible;
+    visibility: visible !important;
     flex-direction: row;
     width: auto;
     transform: none;
@@ -41,6 +45,11 @@
 @media (min-width: 992px) {
   .navbar-expand-lg .offcanvas .offcanvas-body .navbar-nav .accordion-item .accordion-body .list-group {
     position: absolute;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .modal-backdrop {
+    display: none;
   }
 }
 

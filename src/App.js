@@ -4,6 +4,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import Button from "./components/Header/Navbar/SearchForm/Button/Button";
 import Icon from "./components/Header/Navbar/SearchForm/Icon/Icon";
+import NavItem from "./components/Header/Navbar/SiteMenu/Nav/__NavItem/__NavItem";
+import Nav from "./components/Header/Navbar/SiteMenu/Nav/Nav";
 
 function App() {
     return (
@@ -339,12 +341,14 @@ function App() {
                     <td><Button sem="primary" out content="favorite" icon="favorite_border" iconBadge="square"/></td>
                     <td><Button sem="primary" out content="favorite" icon="favorite_border" iconBadge="round"/></td>
                     <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly/></td>
-                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="square"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="square"/>
+                    </td>
                     <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
                                 iconBadge="square"/></td>
                     <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
                                 iconBadge="round"/></td>
-                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="round"/></td>
+                    <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="round"/>
+                    </td>
                     <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
                                 iconBadge="square"/></td>
                     <td><Button sem="primary" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
@@ -375,12 +379,14 @@ function App() {
                     <td><Button sem="warning" out content="favorite" icon="favorite_border" iconBadge="square"/></td>
                     <td><Button sem="warning" out content="favorite" icon="favorite_border" iconBadge="round"/></td>
                     <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly/></td>
-                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="square"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="square"/>
+                    </td>
                     <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
                                 iconBadge="square"/></td>
                     <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="square"
                                 iconBadge="round"/></td>
-                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"/></td>
+                    <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"/>
+                    </td>
                     <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
                                 iconBadge="square"/></td>
                     <td><Button sem="warning" out content="favorite" icon="favorite_border" iconOnly btnForm="round"
@@ -394,11 +400,19 @@ function App() {
                     <td>Button sem="primary" content="favorite" icon="favorite_border" iconBadge="round"</td>
                     <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly</td>
                     <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"</td>
-                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square" iconBadge="square"</td>
-                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square" iconBadge="round"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                        iconBadge="square"
+                    </td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="square"
+                        iconBadge="round"
+                    </td>
                     <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round"</td>
-                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round" iconBadge="square"</td>
-                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round" iconBadge="round"</td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                        iconBadge="square"
+                    </td>
+                    <td>Button sem="primary" content="favorite" icon="favorite_border" iconOnly btnForm="round"
+                        iconBadge="round"
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -433,9 +447,10 @@ function App() {
                     <td><Button sem="primary" out content="Search" btnVis="lg"/></td>
                     <td><Button sem="primary" out content="Search" icon="search"/></td>
                     <td><Button sem="primary" out content="Search" icon="search" iconOnly textVis="lg"/></td>
-                    <td><Button sem="primary" out content="Search" icon="search" iconOnly textVis="lg" iconInvis="lg"/></td>
+                    <td><Button sem="primary" out content="Search" icon="search" iconOnly textVis="lg" iconInvis="lg"/>
+                    </td>
                 </tr>
-<tr>
+                <tr>
                     <th scope="row">outline-warning</th>
                     <td><Button sem="warning" content="Sign in"/></td>
                     <td><Button sem="warning" content="Sign in" btnInvis="lg"/></td>
@@ -456,20 +471,75 @@ function App() {
                 </tbody>
             </table>
 
+            <p>
+                <Button/>
+                <Button content="Выполнить"/>
+                <Button content="Выполнить" sem="success" size="sm"/>
+                <Button content="Выполнить" sem="success"/>
+                <Button content="Выполнить" sem="success" size="lg"/>
+                <Button content="Выполнить" sem="success" out/>
+                <Button content="Выполнить" sem="danger" icon="settings" size="sm"/>
+                <Button content="Выполнить" sem="success" icon="settings"/>
+                <Button content="Выполнить" sem="danger" icon="settings" size="lg"/>
+            </p>
+
+            <h3>Меню</h3>
+            <h4>Пункты меню</h4>
+
+            <table className="table">
+                <thead>
+                <tr className="table__head">
+                    <th scope="col">Bootstrap-класс</th>
+                    <th scope="col">Без пропсов</th>
+                    <th scope="col">С наименованием</th>
+                    <th scope="col">Со ссылкой</th>
+                    <th scope="col">Активный</th>
+                    <th scope="col">Выключенный</th>
+                    <th scope="col">В обертке li</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr className="table__head">
+                    <th scope="row">CSS-классы</th>
+                    <td>.Nav__item</td>
+                    <td>.Nav__item</td>
+                    <td>.Nav__item</td>
+                    <td>.Nav__item</td>
+                    <td>.Nav__item</td>
+                    <td>.Nav__item</td>
+                </tr>
+                <tr>
+                    <th scope="row">outline-warning</th>
+                    <td><NavItem/></td>
+                    <td><NavItem content="Пункт"/></td>
+                    <td><NavItem content="Яндекс" href="https://yandex.ru"/></td>
+                    <td><NavItem content="Active" active/></td>
+                    <td><NavItem content="Off" disabled/></td>
+                    <td><div className="nav"><NavItem type="li"/></div></td>
+                </tr>
+                <tr className="table__head">
+                    <th scope="row">Код</th>
+                    <td>NavItem</td>
+                    <td>NavItem content="Пункт"</td>
+                    <td>NavItem content="Яндекс" href="https://yandex.ru"</td>
+                    <td>NavItem content="Active" active</td>
+                    <td>NavItem content="Off" disabled</td>
+                    <td>NavItem type="li"</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <Nav/>
+                <Nav pos="center"/>
+                <Nav pos="right"/>
+                <Nav vertical/>
+                <Nav type="tabs"/>
+                <Nav type="pills"/>
+            </p>
 
             <div className="block"></div>
 
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
         </div>
     );
 }

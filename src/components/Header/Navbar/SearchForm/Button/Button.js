@@ -1,13 +1,9 @@
 import "./Button.css";
-import Button_Offcanvas from "./Button_Offcanvas/Button_Offcanvas";
 import Button_toggle from "./Button_action/Button_toggle/Button_toggle";
 import Icon from "../Icon/Icon";
 
 function Button(props) {
-    if (props.offcanvasId) {
-        return <Button_Offcanvas type={props.type} icon={props.icon} title={props.title} style={props.style}
-                                 offcanvasId={props.offcanvasId}/>
-    }
+
     if (props.action === "toggle") {
         return <Button_toggle type={props.type} content={props.content} sem={props.sem} out={props.out}
                               size={props.size} icon={props.icon} action="toggle" active={props.active}/>
@@ -112,6 +108,17 @@ function Button(props) {
     }
     if (props.btnVis) {
         buttonClass += " d-none d-" + props.btnVis + "-inline-flex";
+    }
+
+    // Actions ----------------
+    // Offcanvas --------
+    const buttonTarget = props.targetId ? "#" + props.targetId : "#offcanvasExample";
+    const buttonAria = props.targetId ? props.targetId : "offcanvasExample";
+    if (props.action === "offcanvas") {
+        return (
+            <button className={buttonClass} type={buttonType} disabled={props.disabled} data-bs-toggle="offcanvas"
+                    data-bs-target={buttonTarget} aria-controls={buttonAria}>{buttonIcon}{buttonContent}</button>
+        )
     }
 
     return (

@@ -8,10 +8,12 @@
   }
 
   .offcanvas {
+    display: inline-flex;
 
     @media (min-width: 992px) {
+      transition: transform 0s;
       position: static;
-      visibility: visible;
+      visibility: visible!important;
       flex-direction: row;
       width: auto;
       transform: none;
@@ -65,6 +67,13 @@
           //}
         }
       }
+    }
+  }
+
+  .modal-backdrop {
+
+    @media (min-width: 992px) {
+      display: none;
     }
   }
 }

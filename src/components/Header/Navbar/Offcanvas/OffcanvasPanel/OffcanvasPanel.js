@@ -1,15 +1,30 @@
 import OffcanvasBody from "./__OffcanvasBody/__OffcanvasBody";
 import OffcanvasHeader from "./__OffcanvasHeader/__OffcanvasHeader";
 
-function OffcanvasPanel() {
+function OffcanvasPanel(props) {
+    const label = props.id + "Label";
+    let panelPosition = " offcanvas-start";
+    switch (props.pos) {
+        case "top" :
+            panelPosition = " offcanvas-top";
+            break;
+        case "right" :
+            panelPosition = " offcanvas-end";
+            break;
+        case "bottom" :
+            panelPosition = " offcanvas-bottom";
+            break;
+        default:
+            panelPosition = " offcanvas-start";
+            break;
+    }
+    const panelClass = "offcanvas" + panelPosition;
     return (
-        // <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <div className="offcanvas offcanvas-start" tabIndex="-1" id="sideBar"
-                 aria-labelledby="sideBarLabel">
-                <OffcanvasHeader/>
-                <OffcanvasBody/>
-            </div>
-        // </div>
+        <div className={panelClass} tabIndex="-1" id={props.id}
+             aria-labelledby={label}>
+            <OffcanvasHeader/>
+            <OffcanvasBody/>
+        </div>
     )
 }
 

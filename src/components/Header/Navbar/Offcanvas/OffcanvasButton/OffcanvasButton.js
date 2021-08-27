@@ -1,8 +1,8 @@
 import Button from "../../SearchForm/Button/Button";
 
-function OffcanvasButton () {
+function OffcanvasButton (props) {
     return (
-        <Button icon="menu" title="Сайдбар" style="outline-secondary" offcanvasId="sideBar"/>
+        <Button content="Меню" sem="secondary" out icon="menu" iconOnly btnInvis="lg" btnForm="square" action="offcanvas" targetId={props.targetId}/>
     )
 }
 
